@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Example Of Runtime Error</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="err"></p>
+    <script>
+        let a=0;
+        a+=1;
+        try{
+
+            alertt("Hi");// error
+        }
+        catch(err){
+                document.getElementById("err").innerHTML=err;
+                // document.getElementById("err").innerHTML=err.message;
+        }
+        a+=1;
+        document.getElementById("p1").innerHTML=a;
+    </script>
+</body>
+</html>

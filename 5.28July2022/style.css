@@ -1,0 +1,53 @@
+/* 1st attempt for font checking
+html{
+    font-size: 40px;
+}
+
+body{
+    font-size: 56px;
+}
+#mainDiv{
+    font-size: 32px;
+}
+#div1{
+    font-size: 2em;
+}
+#div2{
+    font-size: 2rem;
+}
+#div3{
+} */
+
+
+
+/* 2nd attempt for gradient colors 
+body {
+    background: linear-gradient(to bottom, rgb(255, 223, 204), rgba(208, 88, 23, 0.4));
+    font-size: 1.15em;
+    text-align: justify;
+    font-family: "Lato", sans-serif;
+   }
+   #title {
+    color: rgb(186, 133, 9);
+    font-family: "Sarabun", sans-serif;
+   }
+   #service-image { 
+    height: 400px;
+    width: 70vw;
+    background: radial-gradient(circle, red 20%, blue 40%, green 55%);
+    border: 10px solid rgb(28, 28, 79);
+   }
+*/
+
+/* 3rd attempt for table  */
+
+table,td,th{
+    border: 4px solid salmon;
+    text-align: center;
+    font-size: 46px;
+}
+
+table{
+    width: 50%;
+    height: 300px;
+}

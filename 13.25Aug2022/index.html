@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="f1()">Click</button>
+    <script>
+        // function f1(){
+        //     console.log("First");
+        //     setTimeout(function second()
+        //     {
+        //         console.log("Time Out!");
+        //     },2000);
+        //     console.log("Final");
+        // }
+
+        // 2nd code 
+
+
+        // function f1() {
+        //     async function f() {
+        //         return 1;
+        //     }
+        //     f().then(alert);
+        // }
+
+        //promises
+
+        // function f1() {
+        //     async function f() {
+        //         return Promise.resolve(1);
+        //     }
+        //     f().then(alert);
+        // }
+
+
+            //code 4
+
+            
+        function f1() {
+            async function f() {
+                let p = new Promise((resolve, reject) => {
+                    setTimeout(() => resolve("done!"), 1000);
+                });
+                let result = await p; // wait until the promise resolves (*)
+                alert(result); // "done!"
+            }
+            f();
+        }
+    </script>
+</body>
+
+</html>

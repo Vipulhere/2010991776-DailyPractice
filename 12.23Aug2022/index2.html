@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Example Of Runtime Error</title>
+</head>
+<body>
+    <input type="text" name="n1" id="n1" placeholder="Enter a Number">
+    <button type="button" onclick="myFn()">Test Input</button>
+    <p id="err"></p>
+    <p id="demo"></p>
+    <script>
+    //     function myFn(){
+    //         let a =document.getElementById("n1").value;
+    //         try{
+
+
+    //         if(!isNaN(a)){
+    //             a=Number(a);
+    //             if(a<18){
+    //                 throw "It's too late";
+    //             }
+    //             if(a>60){
+    //                 throw "It's too high";
+    //             }
+    //             else{
+    //                 throw "It is not a number";
+    //             }
+    //         }
+    //     }
+    //     catch(err){
+    //             document.getElementById("err").innerHTML=err;
+    //             document.getElementById("demo").innerHTML=a;
+    //     }
+    //  }
+        function myFn(){
+            let a=0;
+            function numCal(){
+            a =document.getElementById("n1").value;
+            
+
+
+            if(!isNaN(a)){
+                a=Number(a);
+                if(a<18){
+                    throw "It's too low";
+                }
+                if(a>60){
+                    throw "It's too high";
+                
+                }
+            }
+            else{
+                throw "It is not a number";
+            }
+        
+        }
+        try{
+            numCal();
+        }
+        catch(err){
+                document.getElementById("err").innerHTML=err;
+                document.getElementById("demo").innerHTML=a;
+        }
+     }
+    </script>
+</body>
+</html>

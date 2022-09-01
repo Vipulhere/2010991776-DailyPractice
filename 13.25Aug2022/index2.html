@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="f1()">Click Here</button>
+
+    <script>
+
+        function f1(){
+
+            function divvalue(){
+                var a=prompt("Enter first value");
+                var b=prompt("Enter second value");
+                if(b==0){
+                    console.log("errorr");
+                }
+                else{
+                    alert(a/b);
+                }
+            }
+
+            async function f(){
+                let p=new Promise((resolve,reject)=>{
+                    //setTimeout(()=>resolve("done!"),1000);
+                    resolve(divvalue());
+                    reject(console.error("wrongg"));
+
+                    // var a=prompt("enter a:");
+                    // var b=prompt("enter b:");
+
+                    // if(b==0){
+                    //     reject(alert("enter valid value of b"));
+                    // }
+                    // else{
+                    //     resolve(alert(a/b));
+                    // }
+
+                });
+
+                let result=await p;
+                alert(result);
+
+            }
+
+            f();
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function retn(formvalidate){
+            localStorage.setItem("name",formvalidate.n1.value);
+            localStorage.setItem("roll",formvalidate.num.value);
+            localStorage.setItem("group",formvalidate.txt.value);
+
+
+        }
+    </script>
+    <form name="formvalidate" action="FormOut.html" method="get" onSubmit="retn(formvalidate)">
+        Name : <input name="n1" type="text" id="n1"> <br>
+        Roll Number : <input  type="number" id="num" name="num"> <br>
+        Group : <input  type="text" id="txt" name="txt"> <br>
+        <input type="submit">
+    </form>
+</body>
+</html>

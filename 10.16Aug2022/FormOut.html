@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="one">
+
+    </h1>
+    <h1 id="two">
+
+    </h1>
+    <h1 id="three">
+
+    </h1>
+    <script>
+        document.getElementById("one").innerHTML="Name : "+localStorage.getItem("name");
+        document.getElementById("two").innerHTML="Roll Number : "+localStorage.getItem("roll");
+        document.getElementById("three").innerHTML="Group : "+localStorage.getItem("group");
+
+        //cookies : server side
+        //local host : client side
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Form Validation using RegExp</h1>
+    <script>
+        function check(myform) {
+            if (myform.myname.value == "" || myform.myname.value == null) {
+                alert("Name is mandatory");
+                return false;
+            }
+            if (myform.myphone.value == "" || myform.myphone.value == null) {
+                alert("Phone number is mandatory");
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+    <form name="formvalidate" action="formprocess.html" method="get" onSubmit="return check(formvalidate)">
+        <!-- <form name="#" action="formprocess.html" method="get" onSubmit="return check(formvalidate)"> -->
+        <p> Name :
+            <input type="text" size="50" name="myname" />
+        </p>
+        <p> Phone No :
+            <input type="text" size="50" name="myphone" />
+        </p>
+        <p>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Clear" />
+        </p>
+    </form>
+</body>
+
+</html>
+</body>
+
+</html>

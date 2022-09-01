@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="inp" name="inp" type="number" /><br>
+    <button onclick="myfun()">click here</button>
+    <p id="p1"></p>
+    <p id="errr"></p>
+
+    <script>
+
+        var employees = [];
+
+        employees.push({ name: "George", age: 32, retiredate: "March 12, 2014" });
+        employees.push({ name: "Edward", age: 17, retiredate: "June 2, 2023" });
+        employees.push({ name: "Hola", age: 17, retiredate: "June 2, 2023" });
+        employees.push({ name: "Christine", age: 58, retiredate: "December 20, 2036" });
+        employees.push({ name: "Sarah", age: 62, retiredate: "April 30, 2020" });
+
+        employees.sort(function (a, b) {
+            return a.age - b.age;
+        });
+
+        function myfun1() {
+            let n = document.getElementById("inp").value;
+            var flag = true;
+            for (var i = 0; i < 4; i++) {
+                //alert(employees[i].age);
+                if (employees[i].age == n) {
+                    document.getElementById("p1").innerHTML += "age: " + employees[i].age + " name: " + employees[i].name + "retiredate: " + employees[i].retiredate;
+                    flag = false;
+                }
+            }
+            if (flag == true) {
+                throw "Age not found in record!";
+            }
+        }
+        function myfun() {
+            try {
+                myfun1();
+            }
+            catch (err) {
+                document.getElementById("errr").innerHTML = err;
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

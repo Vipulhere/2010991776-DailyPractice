@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2Aug2022</title>
+    <script>
+        function fnClick() {
+            alert("Hi, How are you");
+        }
+        // function fnClick(){
+        //     var n1="5";
+        //     var n2="6";
+        //     n1=Number(n1);
+        //     n2=Number(n2);
+        //     document.getElementById("p1").innerHTML=n1+n2;
+        // }
+
+        // function fnClick(){
+        //     var n1=document.getElementById("n1").value;
+        //     var n2=document.getElementById("n2").value;
+        //     alert(isNaN(n1))
+        //     n1=Number(n1);
+        //     n2=Number(n2);
+        //     document.getElementById("p1").innerHTML=n1+n2;
+        // }
+
+
+        // function fnClick(){
+        //     var n1=document.getElementById("n1").value;
+        //     var n2=document.getElementById("n2").value;
+        //     if(!isNaN(n1) && !isNaN(n2)){
+        //     n1=Number(n1);
+        //     n2=Number(n2);
+        //     document.getElementById("p1").innerHTML=n1+n2;
+        // }
+        // else{
+        //         document.getElementById("p1").innerHTML="<span style='color:red'>Plese Enter numeric value.</span>"
+
+        //     }
+        // }
+
+
+        // function fnClick() {
+        //     let n1 = document.getElementById("n1").value;
+        //     if (n1 % 2 == 0) {
+        //         document.getElementById("p1").innerHTML = "Even Number";
+        //     } else {
+        //         document.getElementById("p1").innerHTML = "Odd Number";
+        //     }
+        // }
+
+        
+        function fnClick() {
+            let n1 = document.getElementById("n1").value;
+            let flag = true;
+            for (let i = 2; i < n1; i++) {
+                if (n1 % i == 0) {
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag == true) {
+                document.getElementById("p1").innerHTML = "Prime";
+            }
+            else {
+                document.getElementById("p1").innerHTML = "Not Prime";
+            }
+        }
+
+
+    // function fnClick(){
+    //     document.getElementById("p1").innerHTML=Boolean(10>9);
+        // }
+        // function fnClick(){
+        //     document.getElementById("p1").innerHTML="Hello"
+        // }
+
+        
+    </script>
+
+</head>
+
+<body>
+    <!-- <button onclick="window.print()">Print this page</button> -->
+    <!-- <button onclick="fnClick()">Let Me Alert You</button> -->
+    <!-- <button onclick="alert()">Let Me Alert You</button> -->
+    N1<input type="text" name="n1" id="n1"><br><br>
+    N2<input type="text" name="n2" id="n2"><br><br>
+    <button onclick="fnClick()">Print</button>
+    <p id="p1">Hola</p>
+
+</body>
+
+</html>
