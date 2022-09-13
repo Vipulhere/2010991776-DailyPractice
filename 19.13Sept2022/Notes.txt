@@ -1,0 +1,10 @@
+Components in reactJs.
+
+A components is a sibgle entitiy used to create ui in react js for web development.
+
+There are two types of components in react Js. 1. Functional 2. Class.
+
+
+Suppose if u want to use css in reactJS.
+-Create a Seprate CSS file for each components.
+-Eg. App.js(App.css) .. Index.Js (index.css)
