@@ -1,0 +1,25 @@
+
+body{
+  /* background-image:url(./background.png); */
+  background-image: url("https://source.unsplash.com/random/?hacker");
+  background-repeat: inherit;
+}
+
+.App {
+  text-align: center;
+  padding: 10px;
+}
+
+h1{
+  color: rgb(243, 46, 11);
+  font-weight: bold;
+  font-style: oblique;
+  flex-direction: inherit;
+  background-color: aliceblue;
+}
+p{
+  text-align: center;
+  font-size: x-large;
+  color: rgb(255, 102, 0);
+  background-color: antiquewhite;
+}
